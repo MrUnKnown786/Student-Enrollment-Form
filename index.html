@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=2, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+
+        <title>Student Enrollment Form</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <script type="text/javascript" src="./script.js"></script>
+    </head>
+
+    <body>
+
+        <div>
+            <div id = "body1">
+                <b style="color: white;">Student Enrollment Form</b>
+            </div>
+
+            <div id = "body2">
+                <div id = "body4">
+                    <div id = "body6"></div>
+                    <div id = "body7">
+                        <form id="Form" autocomplete="off" onsubmit="onFormSubmit()">
+                            <div class="row">
+                                <div class="col-30">
+                                    <label for="Name">Name</label>
+                                </div>
+                                <div class="col-70">
+                                    <input type="text" id="Name" name="Name" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <label for="Email">Email</label>
+                                </div>
+                                <div class="col-70">
+                                    <input type="email" id="Email" name="Email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <label for="Website">Website</label>
+                                </div>
+                                <div class="col-70">
+                                    <input type="url" id="Website" name="Website" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <label for="Image">Image link</label>
+                                </div>
+                                <div class="col-70">
+                                    <input type="url" id="Image" name="Image" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <label for="Gender">Gender</label>
+                                </div>
+                                <div class="col-70">
+                                    <input type="radio" id="Gender" name="Gender" value="Male" required>Male
+                                </div>
+                                <div class="col-70">
+                                    <input type="radio" id="Gender" name="Gender" value="Female">Female
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <label for="Skill">Skills</label>
+                                </div>
+                                <div class="col-70" style="padding-top: 12px;">
+                                    <input type="checkbox" id="Java" name="Skills" value="Java">Java
+                                    <span class="checkmark"></span>
+                                    <input type="checkbox" id="HTML" name="Skills" value="HTML">HTML
+                                    <input type="checkbox" id="CSS" name="Skills" value="CSS">CSS
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 5px;">
+                                <div style="float: left; width: 35%; margin-top: 5px; text-align: center;">
+                                    <input type="submit" value="Enroll Student">
+                                </div>
+                                <div style="float: left; width: 65%; margin-top: 5px;">
+                                    <input type="reset" value="Clear">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div id = "body8"></div>
+                </div>
+
+                <div id = "body5">
+                    <h1 style="padding-bottom: 5px;">Enrolled Students</h1>
+
+                    <table class="list" id="showdata">
+                        <thread>
+                            <tr>
+                                <th style="width: 75%;">Description</th>
+                                <th>Image</th>
+                            </tr>
+                        </thread>
+
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id = "body3">
+                <b style="color: white;">Copyright 2020-2021 by Fresher Training</b>
+            </div>
+        </div>
+
+
+
+    </body>
+
+
+
+</html>
